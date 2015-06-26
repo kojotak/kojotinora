@@ -1,7 +1,6 @@
 package cz.kojotak.kojotinora;
 
 import static java.util.Arrays.asList;
-import static org.junit.Assert.assertNotNull;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -30,11 +29,10 @@ public class LocalizationTest {
 	@Autowired
 	private Locale locale;
 	
-	private TestContextManager testContextManager;
+	private final TestContextManager testContextManager = new TestContextManager(getClass());
 	private final String klic;
 	
 	public LocalizationTest(String klic){
-		this.testContextManager = new TestContextManager(getClass());
 		this.klic = klic;
 	}
 	
