@@ -9,5 +9,6 @@
   <modules>
   	<module>parametrizedSpringTest</module>
     <module>batchPipeline</module>
+    <module>jdk8mooc</module>
   </modules>
 </project>
